@@ -1,0 +1,678 @@
+body {
+    margin: auto;
+    background-color: #F4EFEF;
+}
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+.navbar {
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    border-top: 5px solid;
+    border-top-color: black;
+    border-bottom: 5px solid;
+    border-bottom-color: black;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.home {
+    display: inline-block;
+
+}
+.center {
+    display: inline-block;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.right {
+    display: inline-block;
+}
+.search {
+    width: 2%;
+    vertical-align: middle;
+}
+
+.main {
+    width: 100%;
+    height:700px;
+    border-bottom: 5px solid;
+    border-bottom-color: black;
+    background-image: url("wireframe_pics/fall_main.jpg");
+    background-size: cover;
+}
+
+
+/***********************/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+    position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+.slide1 {
+    width: 1300px;
+    height: 800px;
+    text-align: center;
+}
+.slide1box {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    margin: 0 auto;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 325px;
+}
+.slide1ContentBox {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+.slide1Sub {
+    text-align: left;
+}
+div#slide1 h1 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0px;
+    display: block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+div#slide1 li {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.line3 {
+    padding-bottom: 10px;
+}
+.slide1Text {
+    margin-top: 30px;
+    text-align: left;
+}
+div#slide1 a {
+    color: black;
+    text-decoration: underline;
+}
+div#style div {
+    display: inline-block;
+    border-left: 5px solid black;
+}
+.styleBar {
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 260px; 
+    margin-bottom: 50px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    letter-spacing: 2px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+.businessdiv {
+    border-right: 5px solid black;
+}
+
+
+.slide2 {
+    width: 1300px;
+    height: 800px;
+    background-size: contain;
+    text-align: center;
+}
+.slide3 {
+    width: 1300px;
+    height: 800px;
+    background-size: cover;
+    text-align: center;
+}
+
+
+/***************************************************/
+.secondContainer {
+    width: 100%;
+    height: 850px;
+    display: block;
+    text-align: center;
+    padding: 100px;
+}
+.whiteShirtdiv {
+    background-image: url("images/pic%202.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 650px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    margin-right: 50px;
+}
+.whiteShirtTextBox {
+    position: absolute;
+    margin: 0 auto;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
+    bottom: 0px;
+}
+.whiteShirtContentBox {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+div#one h1 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0px;
+    display: block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.h2div {
+    text-align: left;
+}
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.lidiv {
+    margin-top: 30px;
+    text-align: left;
+}
+div#one li {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.line2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.readmore {
+    padding-top: 30px;
+    text-align: left;
+    margin: 0 auto;
+    position: absolute;
+}
+div#one a {
+    color: black;
+    text-decoration: underline;
+}
+
+div#links img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.links {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 25px;
+}
+.share {
+    width: 30px;
+    height: 30px;
+}
+.bag {
+    width: 20px;
+    height: 20px;
+}
+.message {
+    width: 30px;
+    height: 30px;
+}
+.gift {
+    width: 20px;
+    height: 20px;
+}
+
+/********************************/
+.stylediv {
+    background-image: url("images/sworts.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 650px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    margin-left: 50px;
+}
+
+.swortsTextBox {
+    position: absolute;
+    margin: 0 auto;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
+    bottom: 0px;
+}
+.swortsContentBox {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+div#two h1 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0px;
+    display: block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.h3div {
+    text-align: left;
+}
+div#two h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.lidiv2 {
+    margin-top: 30px;
+    text-align: left;
+}
+div#two li {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.line2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.readmore {
+    padding-top: 30px;
+    text-align: left;
+    margin: 0 auto;
+    position: absolute;
+}
+div#two a {
+    color: black;
+    text-decoration: underline;
+}
+
+div#links img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.links {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+/***********************************************/
+.thirdContainer {
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    position: relative;
+    padding: 50px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-flex;
+}
+.thirdContCont {
+    margin: 0 auto;
+    display: inline-flex;
+}
+.watchdiv {
+    display: inline-flex;
+}
+.watch {
+    width: 550px;
+    height: 250px;
+    background-size: cover;
+    filter: saturate(80%);
+}
+.mansdiv {
+    display: inline-flex;
+
+}
+.watchTextBox {
+    margin: 0 auto;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
+}
+.watchContentBox {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+div#three h1 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0px;
+    display: block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.h4div {
+    text-align: left;
+}
+div#three h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.lidiv3 {
+    margin-top: 30px;
+    text-align: left;
+}
+div#three li {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.line2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.readmore {
+    padding-top: 30px;
+    text-align: left;
+    margin: 0 auto;
+    position: absolute;
+}
+div#three a {
+    color: black;
+    text-decoration: underline;
+}
+
+div#links img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.links {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+/***************************************************/
+.fourthContainer {
+    width: 100%;
+    height: 800px;
+    display: block;
+    text-align: center;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 0 auto;
+}
+.jortsdiv {
+    background-image: url("images/jorts.jpg");
+    background-size: cover;
+    width: 450px;
+    height: 650px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    margin: 0 auto;
+}
+
+/********************************/
+.jortsTextdiv {
+    background-color: white;
+    width: 450px;
+    height: 650px;
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    margin: 0 auto;
+}
+
+.jortsTextBox {
+    position: absolute;
+    margin: 0 auto;
+    background-color: white;
+    background: rgba(255, 255, 255, 0.7);
+    top: 0px;
+}
+.jortsContentBox {
+    padding: 30px;
+    padding-bottom: 70px;
+}
+div#five h1 {
+    font-family: 'Merriweather', serif;
+    letter-spacing: 0px;
+    display: block;
+    text-align: left;
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 0 auto;
+}
+.line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.h5div {
+    text-align: left;
+}
+div#five h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin: 0 auto;
+}
+.lidiv4 {
+    margin-top: 30px;
+    text-align: left;
+}
+div#five li {
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.line2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.readmore {
+    padding-top: 30px;
+    text-align: left;
+    margin: 0 auto;
+    position: absolute;
+}
+div#five a {
+    color: black;
+    text-decoration: underline;
+}
+
+div#links img {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.links {
+    position: absolute;
+    width: 210px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+/*********************************************/
+div#load a {
+    color: black;
+    text-decoration: underline;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.loaddiv {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+/*******************************************/
+.bottomNav {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+}
+div#nav a {
+    color: white;
+    font-weight: lighter;
+    margin: 30px;   
+}
